@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASTRA | Premium Jewellery</title>
+    
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Didact+Gothic&display=swap" rel="stylesheet">
+    
+    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=1800&q=85">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Nav -->
+    <nav id="navbar">
+        <a href="#" class="nav-brand">ASTRA</a>
+        
+        <div class="nav-links">
+            <a href="#collection">Collection</a>
+            <a href="#collection" data-filter="rings">Rings</a>
+            <a href="#collection" data-filter="necklaces">Necklaces</a>
+            <a href="#collection" data-filter="bracelets">Bracelets</a>
+            <a href="#story">About</a>
+        </div>
+        
+        <div class="nav-right">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            <a href="#" class="nav-cta">Book a Consultation</a>
+        </div>
+        
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#collection" class="menu-link">Collection</a>
+        <a href="#story" class="menu-link">Our Story</a>
+        <a href="#materials" class="menu-link">Materials</a>
+        <div class="nav-cta" style="margin-top: 24px;">Book a Consultation</div>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-anim hero-anim-1 label">NEW COLLECTION — 2026</div>
+            <h1 class="hero-title">
+                <div class="hero-anim hero-anim-2">Forged</div>
+                <div class="hero-anim hero-anim-3">in</div>
+                <div class="hero-anim hero-anim-4" style="font-style: italic;">Starlight</div>
+            </h1>
+            <hr class="hero-rule hero-anim hero-anim-5">
+            <p class="body-text hero-anim hero-anim-5">Each piece begins as a whisper — a rare stone, a vision, a craftsman's devotion. ASTRA jewellery is made to outlast lifetimes.</p>
+            <div class="hero-ctas hero-anim hero-anim-5">
+                <a href="#collection" class="btn-gold">Shop the Collection</a>
+                <a href="#story" class="btn-link">Our Story ↗</a>
+            </div>
+        </div>
+        <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=1800&q=85" alt="Diamond ring close up" class="hero-image" loading="eager">
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="trust-bar">
+        <div class="container trust-grid">
+            <div class="trust-item label"><span>✦</span> <span>Ethically Sourced Gemstones</span></div>
+            <div class="trust-item label"><span>✦</span> <span>Certified 18k & 22k Gold</span></div>
+            <div class="trust-item label"><span>✦</span> <span>Free Worldwide Shipping</span></div>
+            <div class="trust-item label"><span>✦</span> <span>30-Day Returns</span></div>
+        </div>
+    </section>
+
+    <!-- Collection -->
+    <section id="collection" class="collection container">
+        <div class="collection-header reveal">
+            <div class="label">THE COLLECTION</div>
+            <h2 class="collection-title">Pieces that endure</h2>
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="rings">Rings</button>
+                <button class="filter-btn" data-filter="necklaces">Necklaces</button>
+                <button class="filter-btn" data-filter="bracelets">Bracelets</button>
+                <button class="filter-btn" data-filter="earrings">Earrings</button>
+            </div>
+        </div>
+
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card reveal" data-category="rings">
+                <div class="badge">Bestseller</div>
+                <div class="product-img-wrap" data-hires="https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=1600&q=85">
+                    <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=800&q=85" alt="The Solstice Ring" loading="lazy" decoding="async">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">The Solstice Ring</h3>
+                    <div class="product-material">18k Yellow Gold, Diamond</div>
+                    <div class="product-price">$4,200</div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card reveal" data-category="necklaces">
+                <div class="product-img-wrap" data-hires="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=1600&q=85">
+                    <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800&q=85" alt="Lumière Pendant" loading="lazy" decoding="async">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Lumière Pendant</h3>
+                    <div class="product-material">22k Gold, Sapphire</div>
+                    <div class="product-price">$3,850</div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card reveal" data-category="bracelets">
+                <div class="product-img-wrap" data-hires="https://images.unsplash.com/photo-1599643477877-530eb83abc8e?w=1600&q=85">
+                    <img src="https://images.unsplash.com/photo-1599643477877-530eb83abc8e?w=800&q=85" alt="Aura Cuff" loading="lazy" decoding="async">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Aura Cuff</h3>
+                    <div class="product-material">18k White Gold</div>
+                    <div class="product-price">$5,100</div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card reveal" data-category="earrings">
+                <div class="badge">New</div>
+                <div class="product-img-wrap" data-hires="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=1600&q=85">
+                    <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=800&q=85" alt="Celestial Drops" loading="lazy" decoding="async">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Celestial Drops</h3>
+                    <div class="product-material">18k Gold, Pearls</div>
+                    <div class="product-price">$2,400</div>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-card reveal" data-category="rings">
+                <div class="product-img-wrap" data-hires="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=1600&q=85">
+                    <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=800&q=85" alt="Eternity Band" loading="lazy" decoding="async">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Eternity Band</h3>
+                    <div class="product-material">Platinum, Diamonds</div>
+                    <div class="product-price">$6,800</div>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product-card reveal" data-category="necklaces">
+                <div class="product-img-wrap" data-hires="https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?w=1600&q=85">
+                    <img src="https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?w=800&q=85" alt="Nova Choker" loading="lazy" decoding="async">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Nova Choker</h3>
+                    <div class="product-material">18k Rose Gold</div>
+                    <div class="product-price">$4,500</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story -->
+    <section id="story" class="story reveal">
+        <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=1200&q=85" alt="Jewellery crafting atelier" class="story-img" loading="lazy" decoding="async">
+        <div class="story-content">
+            <div class="label">OUR STORY</div>
+            <h2 class="story-title">A century of craft, alive in every stone</h2>
+            <div class="body-text">
+                <p>Since our inception, ASTRA has been defined by an unwavering devotion to the art of fine jewellery. We believe true luxury cannot be rushed; it is born in the quiet moments between master craftsmen and rare materials.</p>
+                <p>Our ateliers operate with the same precision and reverence as they did decades ago. Every piece is meticulously hand-forged, ensuring that what begins as raw material transforms into a living heirloom.</p>
+                <p>With an uncompromising commitment to ethical sourcing, we partner only with verified mines and refiners, allowing the natural brilliance of each stone to shine with a clear conscience.</p>
+            </div>
+            <a href="#" class="btn-link" style="color: var(--gold); border-bottom-color: var(--gold); display: inline-block; margin-top: 16px;">Read our full story ↗</a>
+            
+            <hr class="story-rule">
+            
+            <div class="stats-row">
+                <div>
+                    <span class="stat-num">1987</span>
+                    <span class="label">Year Founded</span>
+                </div>
+                <div>
+                    <span class="stat-num">47</span>
+                    <span class="label">Master Craftsmen</span>
+                </div>
+                <div>
+                    <span class="stat-num">12</span>
+                    <span class="label">Countries Sourced</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Materials -->
+    <section id="materials" class="material reveal">
+        <div class="material-content">
+            <div class="label">MATERIAL INTEGRITY</div>
+            <h2 class="material-title">Only what the earth offers freely</h2>
+            <ul class="material-list">
+                <li>Conflict-free diamonds, certified by the Kimberley Process</li>
+                <li>Recycled 18k and 22k gold from verified refiners</li>
+                <li>Hand-selected gemstones — never mass-produced</li>
+            </ul>
+        </div>
+        <img src="https://images.unsplash.com/photo-1551717743-49959800b1f6?w=900&q=85" alt="Material close-up" class="material-img" loading="lazy" decoding="async">
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section reveal">
+        <div class="container" style="max-width: 600px; margin: 0 auto;">
+            <h2 class="cta-title">Not sure where to start?</h2>
+            <p class="body-text cta-sub">Our jewellery finder takes 60 seconds and matches you to your perfect piece.</p>
+            <a href="#" class="btn-gold" style="font-size: 13px;">Find My Piece &rarr;</a>
+            <span class="cta-social-proof">Trusted by 24,000+ customers across 40 countries</span>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials container reveal">
+        <div class="testi-grid">
+            <div class="testi-card">
+                <div class="quote-mark">"</div>
+                <p class="quote-text">The craftsmanship is unparalleled. My engagement ring catches the light in ways I never thought possible.</p>
+                <span class="testi-name">Eleanor V.</span>
+                <div class="stars">
+                    <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+                <span class="testi-loc">London, UK</span>
+            </div>
+            
+            <div class="testi-card">
+                <div class="quote-mark">"</div>
+                <p class="quote-text">A true work of art. The unboxing experience alone felt like opening a piece of history.</p>
+                <span class="testi-name">James M.</span>
+                <div class="stars">
+                    <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+                <span class="testi-loc">New York, USA</span>
+            </div>
+            
+            <div class="testi-card">
+                <div class="quote-mark">"</div>
+                <p class="quote-text">ASTRA’s commitment to ethical sourcing is what drew me in, but the stunning design is why I keep coming back.</p>
+                <span class="testi-name">Chloe S.</span>
+                <div class="stars">
+                    <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+                <span class="testi-loc">Paris, FR</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">ASTRA</div>
+                <div class="newsletter">
+                    <input type="email" placeholder="Enter your email">
+                    <button>Subscribe</button>
+                </div>
+            </div>
+            
+            <hr class="footer-rule">
+            
+            <div class="footer-middle">
+                <div class="footer-col">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="#">Rings</a></li>
+                        <li><a href="#">Necklaces</a></li>
+                        <li><a href="#">Bracelets</a></li>
+                        <li><a href="#">Earrings</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Craftsmanship</a></li>
+                        <li><a href="#">Ethics</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">Care Guide</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Pinterest</a></li>
+                        <li><a href="#">Journal</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="footer-rule">
+            
+            <div class="footer-bottom">
+                <div>&copy; 2026 ASTRA. All rights reserved.</div>
+                <div class="footer-legal">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" id="lightboxClose">&times;</span>
+        <img src="" id="lightboxImg" alt="Enlarged product image">
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
